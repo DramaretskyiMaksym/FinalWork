@@ -1,13 +1,9 @@
 @use "./special/variables" as *;
 @use "./special/mixins" as *;
 
+@import "./special/fonts";
 @import "./special/setting";
 @import "./special/normalize";
-
-
-
-// h1 {
-//   @include pXY (200px,250px,);
-//    @include cover("../images/Slider-Man.jpg");
-//    @include font (20px ,30px);
-// }
+@import "./sections/header";
+@import "./sections/footer";
+@import "./sections/serviceblocks";

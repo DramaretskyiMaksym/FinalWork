@@ -1,11 +1,38 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../Fonts/Montserrat-Bold.woff2") format("woff2"), url("../../Fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../../Fonts/Montserrat-Regular.woff2") format("woff2"), url("../../Fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
 }
 
+.wrapper {
+  width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+main {
+  background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  border-radius: 0px 0px 12px 12px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -315,4 +342,32 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.service__title h2 {
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.service__title__link {
+  text-decoration: none;
+  color: aqua;
+}
+
+.service__block {
+  text-decoration: none;
+}
+
+.service__block__image {
+  margin-bottom: 30px;
+}
+
+.service__block__title {
+  margin-bottom: 15px;
 }

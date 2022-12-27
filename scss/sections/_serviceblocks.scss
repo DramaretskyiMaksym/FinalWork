@@ -1,0 +1,29 @@
+.wrapper {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.service__title {
+  h2{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.service__title__link{
+  text-decoration: none; 
+  color: aqua;
+}
+
+.service__block {
+  text-decoration: none;
+
+}
+
+.service__block__image {
+  margin-bottom: 30px;
+}
+.service__block__title {
+  margin-bottom: 15px;
+}
