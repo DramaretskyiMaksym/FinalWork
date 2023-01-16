@@ -1,0 +1,87 @@
+.sponsors {
+  padding-top: 200px;
+}
+
+.sponsors__title {
+  text-align: center;
+  color: #323264;
+  font-size: $BaseFontWeight;
+  @include font (14px,17px);
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.sponsors__blocks{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  a {
+    display: inline-block;
+    width: 100%;
+  }
+  a:nth-child(n+7){
+    display: none;
+  }
+}
+
+
+.block__hillel{
+  padding: 32px 0px;
+  text-align: center;
+  background-color: #1C4280;
+}
+.block__wannabiz{
+  padding: 44px 0px;
+  text-align: center;
+  background-color: #143646;
+}
+.block__tapgerine{
+  padding: 38px 0px;
+  text-align: center;
+  background-color: #F48B30;
+}
+.block__3dlook {
+  padding: 39px 0px;
+  text-align: center;
+  background-color: #9E4DC3;
+}
+.block__orangear{
+  padding: 38px 0px;
+  text-align: center;
+  background-color: #FD9339;
+}
+.block__adtelligent{
+  padding: 36px 0px;
+  text-align: center;
+  background-color: #E2E2E4;
+}
+.block__clickky{
+  padding: 29px 0px;
+  text-align: center;
+  background-color: #C71C36;;
+}
+.block__ecoleasing{
+  padding: 22px 0px;
+  text-align: center;
+  background-color: #DCF3F9;
+}
+.block__infratek{
+  padding: 30px 0px;
+  text-align: center;
+  background-color: #EAEAEA;
+}
+.block__sitypark{
+  padding: 41px 0px;
+  text-align: center;
+  background-color: #282240;
+}
+.block__artprint{
+  padding: 37px 0px;
+  text-align: center;
+  background-color: #1D4568;
+}
+.block__ultimatecard{
+  padding: 13px 0px;
+  text-align: center;
+  background-color: #000000;
+}

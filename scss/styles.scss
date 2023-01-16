@@ -1,9 +1,14 @@
-@use "./special/variables" as *;
+@use "./variables.scss/variables" as *;
 @use "./special/mixins" as *;
 
 @import "./special/fonts";
 @import "./special/setting";
-@import "./special/normalize";
+@import "./normalize";
 @import "./sections/header";
 @import "./sections/footer";
-@import "./sections/serviceblocks";
+@import "./sections/services";
+@import "./sections/sponsors";
+@import "./media/tablet-768";
+@import "./media/tablet-1024";
+@import "./media/tablet-1440";
+@import "./media/tablet-1920";
