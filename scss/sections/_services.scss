@@ -33,6 +33,7 @@
 
 .link__title{
   display: inline-block;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   color:$SecondaryColor;
@@ -40,6 +41,15 @@
   margin-bottom: 14px;
   @include font (14px,17px);
   min-width: 315px;
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../images/Arrow.svg);
+    width: 12px;
+    height: 12px;
+    bottom: 3px;
+    right:230px;
+  }
 }
 
 .service__title {
@@ -47,6 +57,7 @@
 }
 .secondary__title {
   display: block;
+  text-decoration: none;
   @include background;
   @include font(30px,37px);
   min-width:315px;

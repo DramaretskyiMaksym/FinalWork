@@ -376,6 +376,7 @@ template {
 
 .link__title {
   display: inline-block;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   color: #24A3FF;
@@ -385,6 +386,15 @@ template {
   line-height: 17px;
   min-width: 315px;
 }
+.link__title::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/Arrow.svg);
+  width: 12px;
+  height: 12px;
+  bottom: 3px;
+  right: 230px;
+}
 
 .service__title {
   margin-bottom: 30px;
@@ -392,6 +402,7 @@ template {
 
 .secondary__title {
   display: block;
+  text-decoration: none;
   background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -536,6 +547,84 @@ template {
   background-color: #000000;
 }
 
+.slider {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  background: #F5F5FA;
+  border-radius: 12px;
+}
+.slider .slider__photo {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../../images/Slider-Man.jpg");
+}
+
+.slider__info {
+  padding: 30px;
+  min-width: 255px;
+}
+
+.slider__introduction {
+  margin-bottom: 30px;
+}
+
+.slider__link {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #24A3FF;
+  font-weight: 700;
+  margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 17px;
+  min-width: 315px;
+}
+.slider__link::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/Arrow.svg);
+  width: 12px;
+  height: 12px;
+  bottom: 3px;
+  right: 220px;
+}
+
+.slider__description {
+  display: inline-block;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  min-width: 255px;
+}
+
+.slider__managername {
+  display: inline-block;
+  max-width: 300px;
+  text-decoration-line: none;
+}
+.slider__managername h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #B3B3BA;
+  margin-bottom: 6px;
+}
+.slider__managername p {
+  color: #B3B3BA;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
 @media (min-width: 768px) {
   .wrapper {
     padding-left: 60px;
@@ -564,7 +653,7 @@ template {
   }
 }
 @media (min-width: 1024px) {
-  .service__block {
-    width: calc(33.3% - 40px);
+  .sponsors__blocks a {
+    width: 25%;
   }
 }
