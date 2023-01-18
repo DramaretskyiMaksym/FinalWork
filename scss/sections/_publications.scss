@@ -1,0 +1,123 @@
+.background {
+  background-color: #F5F5FA;
+}
+
+.publications {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 0px;
+}
+
+.publications__heading {
+  margin-bottom: 30px;
+}
+
+.publications__link {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 14px;
+  font-weight:$BaseFontWeight;
+  font-size:$LessFontSize;
+  color: $SecondaryColor;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+ &::after {
+  content: "";
+  position: absolute;
+  background-image: url(../../images/Arrow.svg);
+  width: 12px;
+  height: 12px;
+  bottom: 3px;
+  right: -15px;
+ }
+}
+.publications__title {
+  font-size: $TertiaryFontSize;
+  @include background;
+  font-weight: $BaseFontWeight;
+  line-height: 30px;
+}
+
+.publications__card {
+  display: inline-block;
+  background-color: #fff;
+  &:last-child {
+    width: 100%;
+  }
+}
+
+.card__photo {
+  display: flex;
+  content:"";
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  @include cover ("../../images/Publication-1.jpg")
+}
+
+.card__photo--secondary {
+  display: flex;
+  content:"";
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  @include cover ("../../images/Publication-2.jpg")
+}
+.card__photo--tertiary {
+  display: flex;
+  content:"";
+  width: 100%;
+  height: 200px;
+  border-radius: 8px 8px 0px 0px;
+  @include cover ("../../images/Publication-3.jpg")
+}
+
+.card__description {
+  padding: 30px;
+}
+
+.card__title {
+  display: inline-block;
+  color: $SecondaryColor;
+  font-size: $baseFontSize;
+  font-weight:$BaseFontWeight;
+  line-height: 20px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card__line {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  line-height: 15px;
+  margin-bottom: 34px;
+  color: $QuaternaryColor;
+  font-weight: $BaseFontWeight;
+  font-size: $SmallFontSize;
+  &::after {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    content: "";
+    background-color:#E6E6F0;
+    width: 100%;
+    height: 4px;
+    bottom: -16px;
+    text-align: center;
+  }
+}
+
+.card__text {
+  display: inline-block;
+  width: 100%;
+  font-size: $LessFontSize;
+  font-weight: $SecondaryFontWeight;
+  line-height: 22px;
+  color: #000000
+}
+

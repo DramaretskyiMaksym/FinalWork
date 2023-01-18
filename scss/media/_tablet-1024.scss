@@ -5,4 +5,19 @@
     width:25%;
   } 
 }
+.slider {
+flex-direction: row;
+}
+.slider__info {
+  min-width: 504px;
+  
+}
+.slider__photo {
+  height: auto;
+  min-width: 400px;
+}
+.slider__description {
+  font-size:$QuaternaryFontSize;
+  font-weight: $BaseFontWeight;
+}
 }
