@@ -16,8 +16,19 @@ flex-direction: row;
   height: auto;
   min-width: 400px;
 }
+.publications {
+  gap: 0px;
+} 
+
 .slider__description {
   font-size:$QuaternaryFontSize;
   font-weight: $BaseFontWeight;
+}
+.publications__card {
+
+  width: calc(33.33% - 15px);
+  &:last-child {
+    width: calc(33.33% - 15px);;
+  }
 }
 }

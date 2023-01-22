@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  padding: 62px 0px 30px;
+  &::before {
+    position: absolute;
+    content: "";
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #E6E6F0;
+    width: 100%;
+    height: 2px;
+    top:30px
+  }
+
+  .footer__location {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__address {
+    display: flex;
+    font-size: $baseFontSize;
+    font-weight: $SecondaryFontWeight;
+    line-height: 20px;
+    color: #323264;
+    margin-bottom: 16px;
+  }
+
+  .footer__map {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: $BaseFontWeight;
+    font-size: $SmallFontSize;
+    line-height: 15px;
+    letter-spacing: 1px;
+    color:$SecondaryColor;
+  }
+
+  .footer__connections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .footer__social {
+    display: flex;
+    margin-bottom: 14px;
+  }
+
+  .footer__phone{
+    display: flex;
+    text-decoration: none;
+    font-weight: $BaseFontWeight;
+    font-size:$baseFontSize;
+    line-height: 20px;
+    color: #46466E;
+    margin-bottom: 18px;
+  }
+
+  .footer__email {
+    display: flex;
+    font-weight:$BaseFontWeight;
+    font-size:$baseFontSize;
+    line-height: 20px;
+    text-decoration: none;
+    color:$SecondaryColor;
+  }
+
+  .footer__name-company {
+    font-weight:$SecondaryFontWeight;
+    font-size:$baseFontSize;
+    line-height: 20px;
+    text-align: center;
+    color:$QuaternaryColor;
+  }
+}
