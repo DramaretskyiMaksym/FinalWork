@@ -341,39 +341,39 @@ template {
   display: none;
 }
 
-.footer {
+.footer__block {
   display: flex;
   justify-content: center;
   flex-direction: column;
   position: relative;
   padding: 62px 0px 30px;
+  width: 100%;
 }
-.footer::before {
+.footer__block::before {
   position: absolute;
   content: "";
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  display: inline-block;
   background-color: #E6E6F0;
   width: 100%;
   height: 2px;
   top: 30px;
 }
-.footer .footer__location {
+.footer__block .footer__location {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
-.footer .footer__address {
+.footer__block .footer__address {
   display: flex;
+  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   color: #323264;
   margin-bottom: 16px;
 }
-.footer .footer__map {
+.footer__block .footer__map {
   display: flex;
   align-items: center;
   text-transform: uppercase;
@@ -383,35 +383,36 @@ template {
   line-height: 15px;
   letter-spacing: 1px;
   color: #24A3FF;
+  margin-bottom: 14px;
 }
-.footer .footer__connections {
+.footer__block .footer__connections {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 30px;
 }
-.footer .footer__social {
+.footer__block .footer__social {
   display: flex;
   margin-bottom: 14px;
 }
-.footer .footer__phone {
+.footer__block .footer__phone {
   display: flex;
   text-decoration: none;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   color: #46466E;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
 }
-.footer .footer__email {
-  display: flex;
+.footer__block .footer__email {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
   color: #24A3FF;
+  margin-bottom: 14px;
 }
-.footer .footer__name-company {
+.footer__block .footer__copyright {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -453,25 +454,25 @@ template {
 }
 
 .link__title {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: center;
   text-decoration: none;
   text-transform: uppercase;
   color: #24A3FF;
   font-weight: 700;
   margin-bottom: 14px;
   font-size: 14px;
-  line-height: 17px;
-  min-width: 315px;
+  line-height: 14px;
+  max-width: 100px;
 }
-.link__title::after {
-  content: "";
-  position: absolute;
-  background-image: url(../../images/Arrow.svg);
-  width: 12px;
-  height: 12px;
-  bottom: 3px;
-  right: 230px;
+.link__title:hover {
+  color: #F0145A;
+}
+.link__title svg {
+  margin-left: 4px;
+}
+.link__title:hover svg path {
+  stroke: #F0145A;
 }
 
 .service__title {
@@ -498,8 +499,10 @@ template {
 }
 
 .block__image {
-  display: block;
+  display: flex;
+  position: relative;
   background-color: white;
+  max-width: 100px;
   padding-left: 14px;
   padding-right: 14px;
   padding-top: 14px;
@@ -652,25 +655,27 @@ template {
 }
 
 .slider__link {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
   text-decoration: none;
   text-transform: uppercase;
   color: #24A3FF;
   font-weight: 700;
+  max-width: 100px;
   margin-bottom: 14px;
   font-size: 14px;
-  line-height: 17px;
-  min-width: 315px;
+  line-height: 14px;
 }
-.slider__link::after {
-  content: "";
-  position: absolute;
-  background-image: url(../../images/Arrow.svg);
-  width: 12px;
-  height: 12px;
-  bottom: 3px;
-  right: 220px;
+.slider__link:hover {
+  color: #F0145A;
+}
+.slider__link svg {
+  display: flex;
+  margin-left: 4px;
+}
+.slider__link:hover svg path {
+  stroke: #F0145A;
 }
 
 .slider__description {
@@ -741,29 +746,32 @@ template {
 }
 
 .publications__heading {
+  margin: 0px;
+  padding: 0px;
   margin-bottom: 30px;
 }
 
 .publications__link {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 14px;
   font-weight: 700;
   font-size: 14px;
   color: #24A3FF;
-  line-height: 17px;
+  line-height: 14px;
   letter-spacing: 1px;
   text-transform: uppercase;
   text-decoration: none;
+  max-width: 140px;
 }
-.publications__link::after {
-  content: "";
-  position: absolute;
-  background-image: url(../../images/Arrow.svg);
-  width: 12px;
-  height: 12px;
-  bottom: 3px;
-  right: -15px;
+.publications__link:hover {
+  color: #F0145A;
+}
+.publications__link svg {
+  margin-left: 4px;
+}
+.publications__link:hover svg path {
+  stroke: #F0145A;
 }
 
 .publications__title {
@@ -778,6 +786,7 @@ template {
 .publications__card {
   display: inline-block;
   background-color: #fff;
+  border-radius: 8px 8px 0px 0px;
 }
 .publications__card:last-child {
   width: 100%;
@@ -785,10 +794,8 @@ template {
 
 .card__photo {
   display: flex;
-  content: "";
   width: 100%;
   height: 200px;
-  border-radius: 8px 8px 0px 0px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -797,7 +804,6 @@ template {
 
 .card__photo--secondary {
   display: flex;
-  content: "";
   width: 100%;
   height: 200px;
   border-radius: 8px 8px 0px 0px;
@@ -809,7 +815,6 @@ template {
 
 .card__photo--tertiary {
   display: flex;
-  content: "";
   width: 100%;
   height: 200px;
   border-radius: 8px 8px 0px 0px;
@@ -892,6 +897,42 @@ template {
   }
   .publications__card {
     width: calc(50% - 15px);
+  }
+  .footer__block {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .footer__block::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background-color: #E6E6F0;
+    width: 100%;
+    height: 2px;
+    top: 30px;
+  }
+  .footer__block .footer__location {
+    display: grid;
+    grid-row: 1/2;
+    justify-self: start;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .footer__block .footer__connections {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    justify-self: start;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  .footer__block .footer__copyright {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: end;
   }
 }
 @media (min-width: 1024px) {

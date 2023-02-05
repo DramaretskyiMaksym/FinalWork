@@ -23,26 +23,31 @@
 .slider__introduction {
   margin-bottom:30px;
 }
+
 .slider__link {
-  display: inline-block;
-  position: relative;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
   text-decoration: none;
   text-transform: uppercase;
   color:$SecondaryColor;
   font-weight: $BaseFontWeight;
+  max-width: 100px;
   margin-bottom: 14px;
-  @include font (14px,17px);
-  min-width: 315px;
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url(../../images/Arrow.svg);
-    width: 12px;
-    height: 12px;
-    bottom:3px;
-    right:220px;
+  @include font (14px,14px);
+  &:hover {
+    color: #F0145A;
   }
-}
+    svg {
+      display: flex;
+      margin-left: 4px;
+ 
+     }
+     &:hover svg path {
+       stroke: #F0145A;
+      }
+  }
+
 
 .slider__description {
   display: inline-block;
