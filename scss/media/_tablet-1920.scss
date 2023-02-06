@@ -1,10 +1,19 @@
 @media (min-width:1920px) {
-  .wrapper {
-    max-width: 1600px;
-    padding-right: 0px;
-    padding-left: 0px;
+  // .wrapper {
+  //   max-width: 1600px;
+  //   padding-right: 0px;
+  //   padding-left: 0px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  // }
+  .slider__wrapper {
+    padding-left: 280px;
+    padding-right: 280px;
     margin-left: auto;
     margin-right: auto;
+  }
+  .services__block {
+    padding: 58px 0px 58px 60px;
   }
   .sponsors__wrapper {
     padding: 0px 100px;
