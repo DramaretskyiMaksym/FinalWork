@@ -1,22 +1,40 @@
 @media (min-width:1024px) {
   .header__background {
-    background: #323264;
-    @include  cover ("../../images/Symbol.svg") ;
-    height:100vh;
-    background-size:contain;
+   background-size: contain;
   }
-
   .slider__wrapper{
     padding-left: 60px;
     padding-right: 60px;
     margin-left: auto;
     margin-right: auto;
   }
+  .header__info {
+    position: relative;
+    bottom: -25px;
+    justify-content: flex-end;
+    padding: 50px 0px 0px 0px;
+  }
+  .header__nav {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
+  .logo {
+    margin-bottom: 0px;
+  }
+
+  .header__list {
+    padding-top: 20px;
+    
+  }
+
+
   .header__burger {
     display: none;
   }
   .slider__block {
     display: flex;
+    margin: 0px;
     padding: 60px 0px 0px;
     margin-bottom: 60px;
   }

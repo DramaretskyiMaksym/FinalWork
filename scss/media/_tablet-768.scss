@@ -1,11 +1,25 @@
 @media  (min-width:768px) {
+
   .wrapper {
     padding-left: 60px;
     padding-right: 60px;
   }
 
+  .header__wrapper{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .header__info {
+    background-color:transparent;
+    justify-content:flex-start;
+    padding: 50px 0px 30px 0px;
+  }
 
   .header__address {
+    display: flex;
     position: relative;
     font-style: normal;
     font-weight: 400;
@@ -27,6 +41,7 @@
   }
   
   .header__phone {
+    display: flex;
     position: relative;
     margin-left: 18px;
     &::before {
@@ -62,6 +77,47 @@
       background: #E6E6F0;
       border-radius:10px;
     }
+  }
+  
+  
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+  .header__nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding:0px 0px 0px 0px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .header__list {
+    display: flex;
+    font-style: normal;
+    list-style-type: none;
+  }
+  .header__link {
+    display: flex;
+    text-decoration: none;
+    font-weight:$BaseFontWeight;
+    font-size: baseFontSize;
+    line-height: 20px;
+    color:$BaseColor;
+    margin-right: 15px;
+    &:last-child {
+      margin: 0px;
+    }
+  }
+  .header__burger {
+    display:none;
   }
 
   .slider__block {
