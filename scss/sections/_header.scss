@@ -1,6 +1,6 @@
 .header__background {
   background: #323264;
-  @include  cover ("../../images/Symbol.svg") ;
+  @include  cover ("../images/Symbol.svg") ;
   height:100vh;
 }
 .header__wrapper{
