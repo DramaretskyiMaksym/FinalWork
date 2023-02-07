@@ -1,14 +1,24 @@
 @media (min-width:1024px) {
+  .header__background {
+    background: #323264;
+    @include  cover ("../../images/Symbol.svg") ;
+    height:100vh;
+    background-size:contain;
+  }
+
   .slider__wrapper{
     padding-left: 60px;
     padding-right: 60px;
     margin-left: auto;
     margin-right: auto;
   }
-
+  .header__burger {
+    display: none;
+  }
   .slider__block {
     display: flex;
-    padding: 60px 0px 60px;
+    padding: 60px 0px 0px;
+    margin-bottom: 60px;
   }
 
   .service__choice {
@@ -20,7 +30,7 @@
     overflow:visible;
     padding:8px 58px 8px 0px;
     position: relative;
-    button {
+    a {
       display:flex;
       flex-direction: column;
       justify-content: space-between;

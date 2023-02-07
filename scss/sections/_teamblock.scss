@@ -10,7 +10,6 @@
 }
 .slider__photo {
   display:flex;
-  justify-content: center;
   height: 500px;
   @include  cover ("../images/Slider-Man.jpg");
 }
@@ -41,13 +40,11 @@
     svg {
       display: flex;
       margin-left: 4px;
- 
      }
      &:hover svg path {
        stroke: #F0145A;
       }
   }
-
 
 .slider__description {
   display: inline-block;
