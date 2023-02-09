@@ -833,7 +833,7 @@ template {
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 60px;
   background: #F5F5FA;
   border-radius: 12px;
@@ -1078,7 +1078,7 @@ template {
   width: 650px;
   padding: 30px 30px;
   position: fixed;
-  top: 20%;
+  top: 10%;
   left: 30%;
   transform: translate(-50% -50%);
   background-color: #F5F5FA;
