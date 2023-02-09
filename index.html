@@ -36,7 +36,6 @@
           <div class="header__burger">
             <span></span>
           </div>
-          
           <div class="header__list">
             <a href="" class="header__link">about us</a>
             <a href="" class="header__link">services</a>
@@ -46,12 +45,10 @@
           </div>
         </nav>
         <h1 class="header__title">you legal solutions provider</h1>
-        <a class="header__button" href=""></a>
+        <button class="header__button" id="open-form"> Free consultation</button>
       </header>
     </div>
-
-  </section> 
-
+  </section>
   <main>
     <div class="slider__wrapper">
       <div class="slider__block">
@@ -329,4 +326,32 @@
 
     </div>
   </section>
+  <form  class=" form-form " action="https://fom.in.ua/echo" target="_blank" method="post">
+    <div class="user-name">
+      <legend>We would like to help you</legend>
+      <input  class="name" type="text" name="user-name" placeholder="Name"  required>
+      <input class="messege" type="text" name="messege" placeholder="Message">
+    </div>
+    <div class="user-name">
+      <h3>How to answer you?</h3>
+      <input type="text" name="Phone-number" placeholder="Phone-number"  required>
+      <input type="text" name="Email" placeholder="Email@gmail.com" required>
+    </div>
+    <button  class="send__form" type="submit" >Send message</button>
+    <button class="close__form-form" type="button" id="close-form"></button>
+  </form>
+  <script>
+    const form = document.querySelector('.form-form');
+    const openButton = document.querySelector('#open-form')
+    const closeButton = document.querySelector('#close-form')
+
+    openButton.addEventListener('click', () => {
+      form.classList.add('form__showed')
+    });
+
+    closeButton.addEventListener('click', () => {
+      form.classList.remove('form__showed')
+    });
+  </script>
 </body>
+</html>
