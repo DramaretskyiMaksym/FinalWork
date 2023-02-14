@@ -1,5 +1,9 @@
 .header__background {
   background: #323264;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
   @include  cover ("../images/Symbol.svg");
 }
 
