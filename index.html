@@ -40,7 +40,7 @@
             <a href="" class="header__link">publications</a>
             <a href="" class="header__link">contact</a>
           </div>
-        </nav>
+        </nav> 
         <h1 class="header__title">
           you legal solutions provider
         </h1>
@@ -88,7 +88,7 @@
         </div>
         <div class="service__blocks">
           <a href="/" class="service__block">
-            <img class="block__image" src="./images/Ecommerce.svg"  alt="imageEcommerce" >
+            <img class="block__image" src="./images/Ecommerce.svg" alt="imageEcommerce" >
             <h3 class="block__title">
               IT and e-commerce
             </h3>
@@ -301,8 +301,10 @@
           </div>
           <div class="footer__connections">
             <a href="#"><img class="footer__social" src="./images/FB.svg" alt="facebook"></a>
-            <a class="footer__phone" href="#">0800 211 927</a>
-            <a class="footer__email" href="#">contact@forstudy.space</a>
+            <address>
+              <a class="footer__phone" href="#">0800 211 927</a>
+              <a class="footer__email" href="#">contact@forstudy.space</a>
+            </address>
           </div>
           <p class="footer__copyright" >© 2021 HLEGAL Law company, LLC</p>
       </footer>
@@ -324,6 +326,8 @@
     <button class="send__form" type="submit">Send message</button>
     <button class="close__form-form" type="button" id="close-form"></button>
   </form>
+
+
   <script>
     const form = document.querySelector('.form');
     const openButton = document.querySelector('#open-form')
@@ -336,6 +340,7 @@
     closeButton.addEventListener('click', () => {
       form.classList.remove('form__showed')
     });
+
   </script>
 </body>
 </html>

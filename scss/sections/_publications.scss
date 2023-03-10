@@ -40,7 +40,6 @@
    }
  }
 
-
 .publications__title {
   font-size: $TertiaryFontSize;
   @include background;
@@ -67,15 +66,14 @@
 
 .card__photo--secondary {
   display: flex;
-
   width: 100%;
   height: 200px;
   border-radius: 8px 8px 0px 0px;
   @include cover ("../images/Publication-2.jpg")
 }
+
 .card__photo--tertiary {
   display: flex;
-
   width: 100%;
   height: 200px;
   border-radius: 8px 8px 0px 0px;

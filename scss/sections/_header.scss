@@ -2,7 +2,7 @@
   background: #323264;
   height: 100vh;
   background-size: cover;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
   @include  cover ("../images/Symbol.svg");
 }
@@ -102,9 +102,11 @@
   height: 2px;
   left: 0px;
 }
+
 .header__burger:before {
   top: 0px;
 }
+
 .header__burger::after {
   bottom: 0;
 }
@@ -119,7 +121,6 @@
   color:$BaseColor;
   margin: 0px;
   padding: 0px 92px 0px;
-
 }
 
 .header__button {
@@ -132,5 +133,4 @@
   box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
   border-radius: 12px;
   border: none;
-
 }
