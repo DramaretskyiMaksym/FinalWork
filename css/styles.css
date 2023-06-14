@@ -472,6 +472,7 @@ template {
 .header__button {
   max-width: 210px;
   padding: 18px 30px;
+  cursor: pointer;
   margin-left: auto;
   margin-right: auto;
   color: #FFFFFF;
@@ -1143,6 +1144,7 @@ address {
   .close__form-form {
     position: absolute;
     top: 30px;
+    cursor: pointer;
     right: 30px;
     background-image: url("../images/Close_Form.svg");
     width: 32px;

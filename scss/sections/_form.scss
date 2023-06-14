@@ -63,6 +63,7 @@
   .close__form-form {
     position: absolute;
     top:30px ;
+    cursor: pointer;
     right: 30px;
     background-image: url("../images/Close_Form.svg");
     width: 32px;
@@ -99,7 +100,7 @@
 
 @media  (min-width:1024px) and (max-width:1920px) {
   .form {
-    display:none; 
+    display:none;
     padding: 30px 30px;
     position: fixed;
     width: 640px;
